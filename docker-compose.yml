@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  api:
+    container_name: Mini_Vexere
+    image: node:14.17-alpine
+    restart: always
+    command: >
+      sh -c "yarn &&
+            yarn start"
+    ports:
+      - '5000:5000'
+    working_dir: /app
+    volumes:
+      - ./:/app

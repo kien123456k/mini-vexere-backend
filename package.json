@@ -1,0 +1,46 @@
+{
+  "name": "vexere-backend",
+  "homepage": ".",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=dev node ./bin/www",
+    "start:prod": "cross-env NODE_ENV=production node ./bin/www",
+    "format": "prettier --config .prettierrc --write \"**/*.+(js|jsx|json|css|md)\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi-date": "^2.0.1",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "debug": "^4.3.1",
+    "dotenv": "^8.2.0",
+    "dotenv-parse-variables": "^1.0.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "hogan": "^1.0.2",
+    "joi": "^17.3.0",
+    "joi-objectid": "^3.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.20",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.10.0",
+    "validator": "^13.1.17"
+  },
+  "devDependencies": {
+    "husky": "^4.3.6",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "supertest": "^6.0.1"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn format",
+      "pre-push": "yarn test"
+    }
+  }
+}
