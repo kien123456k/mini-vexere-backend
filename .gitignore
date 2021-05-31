@@ -2,6 +2,7 @@
 node_modules
 
 # environment variables
-.env
+.env.production
+.env.dev
 # service
 # config/aws.config.js
