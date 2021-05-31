@@ -25,6 +25,6 @@ docker-compose up -d
 ```
 yarn format
 ```
-**Note:** if you want to deploy, you can use my Dockerfile to deploy with container to your host server. I successfully deployed to [Heroku](https://www.heroku.com/)
+**Note:** if you want to deploy, you can use my Dockerfile to deploy with container to your host server. I successfully deployed to [Heroku](https://www.heroku.com/).
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
