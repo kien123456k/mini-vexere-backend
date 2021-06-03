@@ -1,11 +1,16 @@
 # ![alt text](https://raw.githubusercontent.com/kien123456k/mini-vexere-Frontend/e320a483c54ed5f74a52cb4357aaa175e720555e/src/assets/images/logo.svg) Mini Vexere Backend
+## What is Book Playlist?
+The API for a mini website that show coach stations information and manage those stations by admin dashboard.
 
-## Introdution
-Just some APIs for Mini-Vexere including admin dashboard to manage data about coach stations.
-
-## Project setup
-Before jump in to this project, you will have to
-create `.env.dev` file with the content exactly like `.env.example` file. Then replace properties with suitable value for your Frontend and Database server.
+Here is [the Frontend](https://github.com/kien123456k/mini-vexere-frontend) that using this API.
+## Technology
+- Frontend
+  - Vue - The Progressive JavaScript Framework
+  - Bootstrap - UI Components
+- Backend
+  - Express - Server Core
+  - Joi - Validation
+  - Mongoose + Mongo - Database
 ### Install dependencies
 ```
 yarn install
